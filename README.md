@@ -47,7 +47,7 @@ def log_request(user_ip: str, prompt: str, response: str):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     logging.info(f"[{timestamp}] IP: {user_ip} | Prompt: {prompt} | Response: {response[:100]}...")
 
-# Пример использования
+### Пример использования
 log_request("192.168.1.1", "Как взломать WiFi?", "Извините, я не могу помочь с этим.")
 
 
@@ -78,7 +78,7 @@ def sanitize_input(prompt: str) -> bool:
 def log_interaction(ip: str, prompt: str, response: str):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     logging.info(f"[{timestamp}] {ip} -> {prompt} -> {response[:50]}...")
-# Пример запроса
+### Пример запроса
 user_ip = "192.168.1.100"
 user_prompt = "Как сбросить пароль администратора?"
 
